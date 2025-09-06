@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pham Dang Cuong • Portfolio</title>
+  <meta name="description" content="Portfolio of Pham Dang Cuong — Senior Software Engineer (PHP/Laravel)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <canvas id="fx"></canvas>
+  
+
+  <!-- HERO -->
+  <section class="hero" id="hero" data-parallax>
+    <div class="container hero-inner">
+      <h1 class="title">Pham Dang <span class="neon">Cuong</span></h1>
+      <p class="subtitle">Senior Software Engineer — PHP/Laravel • React • System Design</p>
+      <div class="cta">
+        <a href="#projects" class="btn btn-primary" data-magnetic>See Projects</a>
+        <a href="mailto:cuongphamdang97@gmail.com" class="btn btn-ghost" data-magnetic>Email me</a>
+      </div>
+      <div class="hero-rings" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container grid-2">
+      <div class="panel glass ring" data-tilt>
+        <h2 class="h2">About</h2>
+        <p class="muted mt">
+          6+ years building reliable web platforms across Banking, E‑commerce, Customer Support and Education.
+          I care about clean architecture, performance, and great developer experience.
+        </p>
+        <div class="kv mt">
+          <div><span>📍</span> Ho Chi Minh City, Viet Nam</div>
+          <div><span>🎓</span> Cao Thang Technical College — Electronics & Telecommunications</div>
+          <div><span>📧</span> cuongphamdang97@gmail.com</div>
+        </div>
+      </div>
+      <div class="panel glass ring" data-tilt>
+        <h2 class="h2">Skillset</h2>
+        <div class="chips mt" id="skills">
+          <!-- inserted by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <div class="bar"></div>
+        <h2 class="h2">Highlighted Projects</h2>
+      </div>
+      <div class="grid-3 mt-xl" id="projects-grid">
+        <!-- cards via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head">
+        <div class="bar alt"></div>
+        <h2 class="h2">Experience Timeline</h2>
+      </div>
+      <div class="vtimeline mt-xl" id="timeline"><div class="vt-axis"></div><div class="vt-list"></div>
+  
+        <!-- items via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="section" id="awards">
+    <div class="container grid-2">
+      <div class="panel glass ring" data-tilt>
+        <h2 class="h2">Awards</h2>
+        <ul class="list mt" id="awards-list"></ul>
+      </div>
+      <div class="panel glass ring" data-tilt>
+        <h2 class="h2">Certificates</h2>
+        <ul class="list mt">
+          <li>Udemy: ReactJS</li>
+          <li>Udemy: VueJS</li>
+          <li>Udemy: NodeJS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container cta-panel glass">
+      <div>
+        <h2 class="h2">Let’s build something great</h2>
+        <p class="muted mt-sm">Open to interesting work, consulting and contracts.</p>
+      </div>
+      <a href="mailto:cuongphamdang97@gmail.com" class="btn btn-primary" data-magnetic>Get in touch</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container small muted">© <span id="y"></span> Cuong — Made with vanilla HTML/CSS/JS.</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <script src="./data.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
